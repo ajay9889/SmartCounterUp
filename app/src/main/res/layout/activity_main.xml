@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical" android:layout_gravity="center"
+    android:gravity="center">
+
+    <com.robinhood.ticker.TickerView
+        android:id="@+id/displayNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:shadowColor="@android:color/black"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:text="1"
+        android:textColor="?colorPrimary"
+        android:textSize="50sp"
+        app:ticker_animationDuration="500"
+        app:ticker_defaultCharacterList="number" />
+
+    <Button
+        android:id="@+id/increment"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:text="Count Up"
+        android:layout_marginTop="50dp"
+        android:onClick="inCrement"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:background="@color/green"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:text="Reset"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:background="@color/colorAccent"
+        android:onClick="resetNumber"
+         />
+
+</LinearLayout>
