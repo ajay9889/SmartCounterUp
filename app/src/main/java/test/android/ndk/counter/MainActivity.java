@@ -33,9 +33,16 @@ public class MainActivity extends AppCompatActivity {
     public native int resetFromJNI();
 
 
+    /**
+     * Count Up button click listner
+     * **/
     public void inCrement(View view){
         tickerView.setText(String.valueOf(counterFromJNI()));
     }
+
+    /**
+     * reset button click listner
+     * **/
     public void resetNumber(View view){
         tickerView.setText(String.valueOf(resetFromJNI()));
 
